@@ -14,6 +14,7 @@ function llenarCard(cardElement, datos) {
             <div class="card-body">
                 <h5 class="card-title">${titulo}</h5>
                 <p class="card-text">${descripcion}</p>
+                <button class="btn btn-danger" onclick="this.closest('.card-container').remove()">Eliminar</button>
             </div>
             ${footer ? `<div class="card-footer">${footer}</div>` : ''}
         </div>

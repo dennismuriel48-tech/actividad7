@@ -1,6 +1,6 @@
 function llenarCard(cardElement, datos) {
     if (!cardElement) return;
-
+    
     const {
         titulo = 'add your task list',
         descripcion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ducimus nobis illum dicta architecto voluptatem natus possimus commodi odit minus mollitia sunt placeat rem. Totam, quibusdam quaerat? Quam, nemo explicabo.</p>',

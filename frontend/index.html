@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="crearCard()">+ New</button>
+    <script src="../backend/funciones.js"></script>
+
+    <menu>
+        <cards >
+            <script src="../backend/funciones.js"></script>
+            <div id="cards-container"></div>
+            <img button onclick="window.open('../img/lineasAbajo.png')"></img>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            llenarcard('#cards-container');
+            });
+            </script>
+        
+        </cards>
+    </menu>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('cards-container');
+    // Create and append a default card on load
+    const card = crearCard();
+    container.appendChild(card);
+});
+
+document.querySelector('button').onclick = function() {
+    const container = document.getElementById('cards-container');
+    const card = crearCard();
+    container.appendChild(card);
+};
+</script>
+</body>
+</html>
